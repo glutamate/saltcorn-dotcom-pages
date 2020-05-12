@@ -1,0 +1,11 @@
+{
+  "name": "saltcorn-dotcom-pages",
+  "version": "0.0.1",
+  "description": "Pages for saltcorn.com",
+  "main": "pages.js",
+  "dependencies": {
+    "saltcorn-markup": "^0.0.1"
+  },
+  "author": "Tom Nielsen",
+  "license": "MIT"
+}
