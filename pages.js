@@ -41,4 +41,4 @@ const root = {
   })
 };
 
-module.exports = { pages: { root } };
+module.exports = { sc_plugin_api_version: 1, pages: { root } };
