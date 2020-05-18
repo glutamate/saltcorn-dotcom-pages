@@ -14,7 +14,7 @@ const root = {
     above: [
       {
         type: "hero",
-        caption: "Open source extensible no-code platform",
+        caption: "Open-source &ensp; extensible &ensp; no-code",
         blurb: "Saltcorn is ..."
       },
       {
@@ -22,18 +22,26 @@ const root = {
           {
             type: "blank",
             contents: iconText(
-              "gem",
-              "Sturdy Themes",
-              "Our themes are updated regularly to keep them bug free!"
+              "concierge-bell",
+              "Simply without writing code",
+              "Build database-backed applications without writing a single line of code"
             )
           },
           {
             type: "blank",
-            contents: "blah"
+            contents: iconText(
+              "tree",
+              "Get started with extensions",
+              "Use open plugins, themes and packs to build your application"
+            )
           },
           {
             type: "blank",
-            contents: "blah"
+            contents: iconText(
+              "people-carry",
+              "Open & Free Forever",
+              "Open source/free software - MIT license. Complete freedom and control. Move providers or platform, take your data with you. No vendor lock-in"
+            )
           }
         ]
       }
