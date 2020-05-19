@@ -15,10 +15,12 @@ const root = {
       {
         type: "hero",
         caption: "Open-source &ensp; extensible &ensp; no-code",
-        blurb: "Saltcorn is ..."
+        blurb: "Saltcorn is ...",
+        backgroundImage: "https://res.cloudinary.com/djovhlikf/image/upload/v1589896244/jess-bailey-Bg14l3hSAsA-unsplash_ygvaqc.jpg"
       },
       {
         invertColor: true,
+        class: "pt-4",
         besides: [
           {
             type: "blank",
@@ -59,7 +61,8 @@ const root = {
             contents: iconText(
               "people-carry",
               "Free & Open Forever",
-              "Open source/free software - MIT license. Complete freedom and control. Move providers or platform, take your data with you. No vendor lock-in"
+              `Open source/free software - MIT license. Complete freedom and control.
+              Move hosting or cloud platform, take your data with you. No vendor lock-in`
             )
           },
           {
@@ -84,12 +87,12 @@ const root = {
             contents:  div({class:"text-center"},
               h4("Code links"),
               div({class:"d-flex"},
-              div({class:"mx-3"},
+              div({class:"mx-auto"},
                 a({href:"https://github.com/glutamate/saltcorns"},
                 i({ class: `fab fa-2x fa-github` }),
                 )
               ),
-              div({class:"mx-3"},
+              div({class:"mx-auto"},
                 a({href:"https://www.npmjs.com/package/@saltcorn/saltcorn"},
                 i({ class: `fab fa-2x fa-npm` }),
                 )
