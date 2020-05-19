@@ -15,8 +15,8 @@ const root = {
       {
         type: "hero",
         caption: "Open-source<br/>extensible no-code",
-        blurb: "Saltcorn is ...",
-        backgroundImage: 'https://res.cloudinary.com/djovhlikf/image/upload/e_brightness:10/v1589898880/joe-woods-4Zaq5xY5M_c-unsplash_wxigal.jpg'
+        blurb: "Saltcorn is a free and open platform for assembling your application from building blocks without writing any code",
+        backgroundImage: 'https://res.cloudinary.com/djovhlikf/image/upload/v1589902386/christian-perner-UKLIuV8rAks-unsplash_foc5wl.jpg'
         // "https://res.cloudinary.com/djovhlikf/image/upload/e_brightness:60/v1589897969/patrick-tomasso-Oaqk7qqNh_c-unsplash_s833z4.jpg"
       },
       {
@@ -25,7 +25,7 @@ const root = {
         besides: [
           {
             type: "blank",
-            contents: div(
+            contents: div({class:"my-5"},
               h4("What is no-code?"),
               p(`No-code platforms let you build complex applications 
             without writing a single line of code. Saltcorn focuses
@@ -36,7 +36,7 @@ const root = {
           },
           {
             type: "blank",
-            contents: div(
+            contents: div({class:"my-5"},
               h4("Why open source?"),
               p(`With an open-source
             platform, you are in control of your application and your data. 
@@ -47,7 +47,7 @@ const root = {
         ]
       },
       {
-        class: "pb-3",
+        class: "pb-3 pt-5",
         besides: [
           {    
             type: "blank",
