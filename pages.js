@@ -14,9 +14,10 @@ const root = {
     above: [
       {
         type: "hero",
-        caption: "Open-source &ensp; extensible &ensp; no-code",
+        caption: "Open-source<br/>extensible no-code",
         blurb: "Saltcorn is ...",
-        backgroundImage: "https://res.cloudinary.com/djovhlikf/image/upload/v1589896244/jess-bailey-Bg14l3hSAsA-unsplash_ygvaqc.jpg"
+        backgroundImage: 'https://res.cloudinary.com/djovhlikf/image/upload/e_brightness:10/v1589898880/joe-woods-4Zaq5xY5M_c-unsplash_wxigal.jpg'
+        // "https://res.cloudinary.com/djovhlikf/image/upload/e_brightness:60/v1589897969/patrick-tomasso-Oaqk7qqNh_c-unsplash_s833z4.jpg"
       },
       {
         invertColor: true,
