@@ -1,4 +1,4 @@
-const { textarea, text, div, span, i, h3, h4, p, a } = require("saltcorn-markup/tags");
+const { textarea, text, div, span, i, h3, h4, p, a } = require("@saltcorn/markup/tags");
 
 const iconText = (icon, header, blurb) =>
   div(
