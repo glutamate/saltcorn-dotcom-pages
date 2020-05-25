@@ -16,7 +16,8 @@ const root = {
         type: "hero",
         caption: "Open-source<br/>extensible no-code",
         blurb: "Saltcorn is a free and open platform for assembling your application from building blocks without writing any code",
-        backgroundImage: 'https://res.cloudinary.com/djovhlikf/image/upload/v1589902386/christian-perner-UKLIuV8rAks-unsplash_foc5wl.jpg'
+        backgroundImage: 'https://res.cloudinary.com/djovhlikf/image/upload/v1589902386/christian-perner-UKLIuV8rAks-unsplash_foc5wl.jpg',
+        cta: p(a ({ href: "/tenant/create", class: "btn btn-primary my-2" }, "Try it now"))
         // "https://res.cloudinary.com/djovhlikf/image/upload/e_brightness:60/v1589897969/patrick-tomasso-Oaqk7qqNh_c-unsplash_s833z4.jpg"
       },
       {
@@ -77,7 +78,7 @@ const root = {
         ]
       },
       {
-        class: "pt-3",
+        class: "pt-3 mb-5",
         besides: [
           {
             type: "blank",
@@ -94,7 +95,7 @@ const root = {
                 )
               ),
               div({class:"mx-auto"},
-                a({href:"https://www.npmjs.com/package/@saltcorn/saltcorn"},
+                a({href:"https://www.npmjs.com/package/@saltcorn/cli"},
                 i({ class: `fab fa-2x fa-npm` }),
                 )
               ),
