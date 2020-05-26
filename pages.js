@@ -1,4 +1,4 @@
-const { textarea, text, div, span, i, h3, h4, p, a } = require("@saltcorn/markup/tags");
+const { textarea, text, div, span, i, h3, h4, p, a, nbsp } = require("@saltcorn/markup/tags");
 
 const iconText = (icon, header, blurb) =>
   div(
@@ -7,6 +7,19 @@ const iconText = (icon, header, blurb) =>
     h3({ class: "h4 mb-2" }, header),
     p({ class: "text-muted mb-0" }, blurb)
   );
+
+const exampleCard = (icon, header, blurb, link) =>
+  ({
+    type: "card",
+    contents: div(
+      { class: "mt-2 text-center" },
+      
+      h3({ class: "h4 mb-2" }, header),
+      i({ class: `fa-2x ${icon} text-primary mb-4` }),
+      p({ class: "text-muted mb-0" }, blurb),
+      a({href:link}, link)
+    )
+  })
 
 const root = {
   title: "Saltcorn | Home",
@@ -78,6 +91,34 @@ const root = {
         ]
       },
       {
+        class: "pt-3",
+        besides: [
+          {
+            type: "blank",
+            contents: " "
+          },
+          {
+            type: "blank",
+            contents:  div({class:"text-center"},
+              h4("Examples"),
+           
+              )
+          },
+          {
+            type: "blank",
+            contents: ""
+          }
+        ]
+      },
+      {
+        class: "pt-3",
+        besides: [
+          exampleCard("fas fa-bug", "Issue tracker", "Track bugs or feedback", "https://issues.saltcorn.com/"),
+          exampleCard("fab fa-wikipedia-w", "Wiki", "User-editable pages", "https://wiki.saltcorn.com/"),
+          exampleCard("fas fa-blog", "Blog", "", "https://blog.saltcorn.com/")
+        ]
+      },
+      {
         class: "pt-3 mb-5",
         besides: [
           {
@@ -108,6 +149,14 @@ const root = {
             contents: ""
           }
         ]
+      },
+      {
+        type: "footer",
+        contents: div(
+          div("Cover image by ", nbsp,a({href:"https://unsplash.com/@christianperner"}, "Christian Perner")),
+          div("Saltcorn code and websites Copyright (c) 2020 Tom Nielsen, released under MIT license"),
+
+          )
       }
     ]
   })
