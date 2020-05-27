@@ -119,6 +119,19 @@ const root = {
         ]
       },
       {
+        class: "pt-3",
+        besides: [
+          exampleCard("fas fa-address-book", "Address book", "Contact list with meeting notes", "https://addressbook.saltcorn.com/"),
+          {
+            type: "blank",
+            contents: " "
+          },{
+            type: "blank",
+            contents: " "
+          }
+        ]
+      },
+      {
         class: "pt-3 mb-5",
         besides: [
           {
