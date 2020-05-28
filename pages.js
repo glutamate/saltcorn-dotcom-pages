@@ -113,15 +113,15 @@ const root = {
       {
         class: "pt-3",
         besides: [
-          exampleCard("fas fa-bug", "Issue tracker", "Track bugs or feedback", "https://issues.saltcorn.com/"),
-          exampleCard("fab fa-wikipedia-w", "Wiki", "User-editable pages", "https://wiki.saltcorn.com/"),
-          exampleCard("fas fa-blog", "Blog", "", "https://blog.saltcorn.com/")
+          exampleCard("fas fa-bug", "Issue tracker", "Track bugs or feedback", "https://issues.saltcorn.com"),
+          exampleCard("fab fa-wikipedia-w", "Wiki", "User-editable pages", "https://wiki.saltcorn.com"),
+          exampleCard("fas fa-blog", "Blog", "", "https://blog.saltcorn.com")
         ]
       },
       {
         class: "pt-3",
         besides: [
-          exampleCard("fas fa-address-book", "Address book", "Contact list with meeting notes", "https://addressbook.saltcorn.com/"),
+          exampleCard("fas fa-address-book", "Address book", "Contact list with meeting notes", "https://addressbook.saltcorn.com"),
           {
             type: "blank",
             contents: " "
