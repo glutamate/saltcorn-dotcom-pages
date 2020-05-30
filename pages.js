@@ -111,11 +111,34 @@ const root = {
         ]
       },
       {
+        widths: [1, 10, 1],
+        besides: [
+          {
+            type: "blank",
+            contents: " "
+          },
+          {
+            type: "blank",
+            contents:  div({class:"text-center"},
+              p(`The Saltcorn wiki, issue tracker, blog and store are built with Saltcorn 
+                (we eat our own dog food). This site (saltcorn.com) is also implemented 
+                in Saltcorn, but currently pages can only be built through plug-ins.
+              `),
+           
+              )
+          },
+          {
+            type: "blank",
+            contents: ""
+          }
+        ]
+      },
+      {
         class: "pt-3",
         besides: [
           exampleCard("fas fa-bug", "Issue tracker", "Track bugs or feedback", "https://issues.saltcorn.com"),
           exampleCard("fab fa-wikipedia-w", "Wiki", "User-editable pages", "https://wiki.saltcorn.com"),
-          exampleCard("fas fa-blog", "Blog", "", "https://blog.saltcorn.com")
+          exampleCard("fas fa-blog", "Blog", "Posts with public comments", "https://blog.saltcorn.com")
         ]
       },
       {
@@ -166,8 +189,8 @@ const root = {
       {
         type: "footer",
         contents: div(
-          div("Cover image by ", nbsp,a({href:"https://unsplash.com/@christianperner"}, "Christian Perner")),
           div("Saltcorn code and websites Copyright (c) 2020 Tom Nielsen, released under MIT license"),
+          div("Cover image by ", nbsp,a({href:"https://unsplash.com/@christianperner"}, "Christian Perner")),
 
           )
       }
