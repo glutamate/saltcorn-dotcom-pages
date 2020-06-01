@@ -145,10 +145,8 @@ const root = {
         class: "pt-3",
         besides: [
           exampleCard("fas fa-address-book", "Address book", "Contact list with meeting notes", "https://addressbook.saltcorn.com"),
+          exampleCard("fas fa-clipboard-list", "Todo list", "Simple todo list", "https://todo.saltcorn.com"),
           {
-            type: "blank",
-            contents: " "
-          },{
             type: "blank",
             contents: " "
           }
