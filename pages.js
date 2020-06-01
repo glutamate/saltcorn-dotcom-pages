@@ -29,7 +29,7 @@ const root = {
         type: "hero",
         caption: "Open-source<br/>extensible no-code",
         blurb: "Saltcorn is a free and open platform for assembling your application from building blocks without writing any code",
-        backgroundImage: 'https://res.cloudinary.com/djovhlikf/image/upload/v1589902386/christian-perner-UKLIuV8rAks-unsplash_foc5wl.jpg',
+        backgroundImage: 'https://res.cloudinary.com/djovhlikf/image/upload/v1591048312/philipp-berndt-5i0GnoTTjSE-unsplash_dfxobn.jpg',
         cta: p(a ({ href: "/tenant/create", class: "btn btn-primary my-2" }, "Try it now"))
         // "https://res.cloudinary.com/djovhlikf/image/upload/e_brightness:60/v1589897969/patrick-tomasso-Oaqk7qqNh_c-unsplash_s833z4.jpg"
       },
@@ -188,7 +188,7 @@ const root = {
         type: "footer",
         contents: div(
           div("Saltcorn code and websites Copyright (c) 2020 Tom Nielsen, released under MIT license"),
-          div("Cover image by ", nbsp,a({href:"https://unsplash.com/@christianperner"}, "Christian Perner")),
+          div("Cover image by ", nbsp,a({href:"https://unsplash.com/@philberndt"}, "Philipp Berndt")),
 
           )
       }
