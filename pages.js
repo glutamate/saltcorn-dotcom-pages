@@ -161,8 +161,8 @@ const root = {
           },
           {
             type: "blank",
-            contents:  div({class:"text-center"},
-              h4("Code links"),
+            contents:  div({class:"text-center mt-5"},
+             
               div({class:"d-flex"},
               div({class:"mx-auto"},
                 a({href:"https://github.com/glutamate/saltcorns"},
@@ -174,8 +174,16 @@ const root = {
                 i({ class: `fab fa-2x fa-npm` }),
                 )
               ),
-
-              
+              div({class:"mx-auto"},
+              a({href:"https://www.youtube.com/channel/UCBOpAcH8ep7ESbuocxcq0KQ"},
+              i({ class: `fab fa-2x fa-youtube` }),
+              )
+            ),
+            div({class:"mx-auto"},
+            a({href:"https://twitter.com/saltcorns"},
+            i({ class: `fab fa-2x fa-twitter` }),
+            )
+          ),
               ))
           },
           {
