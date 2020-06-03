@@ -1,5 +1,6 @@
-const { textarea, text, div, span, i, h3, h4, p, a, nbsp } = require("@saltcorn/markup/tags");
-
+const { textarea, text, div, span, i, h3, h4, p, a, nbsp ,li, mkTag} = require("@saltcorn/markup/tags");
+const {link} = require("@saltcorn/markup");
+const ol=mkTag("ol")
 const iconText = (icon, header, blurb) =>
   div(
     { class: "mt-5 text-center" },
@@ -35,7 +36,7 @@ const root = {
       },
       {
         invertColor: true,
-        class: "pt-4",
+        class: "pt-4 mb-5",
         besides: [
           {
             type: "blank",
@@ -61,7 +62,29 @@ const root = {
         ]
       },
       {
-        class: "pb-3 pt-5",
+        type: "blank",
+        contents: [
+          h4("What is Saltcorn?"),
+          p(`Saltcorn is an open-source no-code builder for web applications. 
+          It is a complete end-to-end solution for the front-end, backend 
+          and database of your application, and it manages both the build 
+          and the hosting stages of your application life-cycle with an 
+          intuitive point-and-click, drag-and-drop user interface. It is 
+          built from the ground up to be extensible with much of the 
+          functionality coming from plugins.`),
+          h4("Create your application in Saltcorn in four simple steps:"),
+          ol(
+            li("Enable plugins needed for data types"),
+            li("Build your database tables with our point-and-click interface"),
+            li("Build your user interface &ndash; the views of the database tables &ndash; with our drag-and-drop interface builder"),
+            li("Choose a theme from a plugin"),
+          ),
+          p("Looking for more information? Head to the &rsaquo;&rsaquo;&rsaquo; ", 
+          link("https://wiki.saltcorn.com/","Saltcorn wiki"))
+        ]
+      },
+      {
+        class: "pb-3 pt-3",
         besides: [
           {    
             type: "blank",
@@ -120,8 +143,8 @@ const root = {
           {
             type: "blank",
             contents:  div({class:"text-center"},
-              p(`The Saltcorn wiki, issue tracker, blog and store are built with Saltcorn 
-                (we eat our own dog food). This site (saltcorn.com) is also implemented 
+              p(`The Saltcorn wiki, issue tracker, blog and store are built with Saltcorn. 
+              This site (saltcorn.com) is also implemented 
                 in Saltcorn, but currently pages can only be built through plug-ins.
               `),
            
