@@ -80,7 +80,9 @@ const root = {
             li("Choose a theme from a plugin"),
           ),
           p("Looking for more information? Head to the &rsaquo;&rsaquo;&rsaquo; ", 
-          link("https://wiki.saltcorn.com/","Saltcorn wiki"))
+          link("https://wiki.saltcorn.com/","Saltcorn wiki")),
+          p({style: "font-size: 1.25rem"}, "Try Saltcorn here &rsaquo;&rsaquo;&rsaquo; ", 
+          link("/tenant/create","Free Saltcorn hosting"))
         ]
       },
       {
