@@ -207,8 +207,13 @@ const root = {
             div({class:"mx-auto"},
             a({href:"https://twitter.com/saltcorns"},
             i({ class: `fab fa-2x fa-twitter` }),
+            ))
+            ,
+            div({class:"mx-auto"},
+            a({href:"https://www.linkedin.com/in/nielsentom/"},
+            i({ class: `fab fa-2x fa-linkedin` }),
             )
-          ),
+          )
               ))
           },
           {
