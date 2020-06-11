@@ -23,12 +23,13 @@ const exampleCard = (icon, header, blurb, link) =>
   })
 
 const root = {
-  title: "Saltcorn | Home",
+  title: "Saltcorn | Free and open-source nocode platform",
+  description: "Saltcorn is a free and open-source platform for building applications without writing code.",
   getPage: async () => ({
     above: [
       {
         type: "hero",
-        caption: "Open-source<br/>extensible no-code",
+        caption: "Open-source<br/>no-code platform",
         blurb: "Saltcorn is a free and open platform for assembling your application from building blocks without writing any code",
         backgroundImage: 'https://res.cloudinary.com/djovhlikf/image/upload/v1591048312/philipp-berndt-5i0GnoTTjSE-unsplash_dfxobn.jpg',
         cta: p(a ({ href: "/tenant/create", class: "btn btn-primary my-2" }, "Try it now"))
