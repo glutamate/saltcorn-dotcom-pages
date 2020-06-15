@@ -172,7 +172,7 @@ const root = {
         besides: [
           exampleCard("fas fa-address-book", "Address book", "Contact list with meeting notes", "https://addressbook.saltcorn.com"),
           exampleCard("fas fa-clipboard-list", "Todo list", "Simple todo list", "https://todo.saltcorn.com"),
-          exampleCard("fas fa-project-diagram", "Project management", "Projects with tasks, notes and a Kanban board", "https://https://project_management.saltcorn.com"),
+          exampleCard("fas fa-project-diagram", "Project management", "Projects with tasks, notes and a Kanban board", "https://project_management.saltcorn.com"),
         ]
       },
       {
