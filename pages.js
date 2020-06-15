@@ -72,7 +72,22 @@ const root = {
           and the hosting stages of your application life-cycle with an 
           intuitive point-and-click, drag-and-drop user interface. It is 
           built from the ground up to be extensible with much of the 
-          functionality coming from plugins.`),
+          functionality coming from plugins.`)
+        ]
+      },
+      {
+        class: "pt-3 pb-3",
+        besides: [          
+          {
+            type: "blank",
+            contents: div('For updates: <a href="https://twitter.com/saltcorns?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @saltcorns</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>'),
+           
+          }
+        ]
+      },
+      {
+        type: "blank",
+        contents: [
           h4("Create your application in Saltcorn in four simple steps:"),
           ol(
             li("Enable plugins needed for data types"),
@@ -172,11 +187,12 @@ const root = {
         besides: [
           exampleCard("fas fa-address-book", "Address book", "Contact list with meeting notes", "https://addressbook.saltcorn.com"),
           exampleCard("fas fa-clipboard-list", "Todo list", "Simple todo list", "https://todo.saltcorn.com"),
-          exampleCard("fas fa-project-diagram", "Project management", "Projects with tasks, notes and a Kanban board", "https://project_management.saltcorn.com"),
+          exampleCard("fas fa-project-diagram", "Project management", "Tasks, notes, Kanban board", "https://project_management.saltcorn.com"),
         ]
-      },
+      }
+      ,
       {
-        class: "pt-3 mb-5",
+        class: "pt-5",
         besides: [
           {
             type: "blank",
@@ -184,32 +200,53 @@ const root = {
           },
           {
             type: "blank",
-            contents:  div({class:"text-center mt-5"},
+            contents:  div({class:"text-center"},
+              h4("Links"),
+           
+              )
+          },
+          {
+            type: "blank",
+            contents: ""
+          }
+        ]
+      },
+      {
+        class: "pt-1 mb-5",
+        widths:[2,8,2],
+        besides: [
+          {
+            type: "blank",
+            contents: " "
+          },
+          {
+            type: "blank",
+            contents:  div({class:"text-center mt-2"},
              
               div({class:"d-flex"},
               div({class:"mx-auto"},
                 a({href:"https://github.com/glutamate/saltcorns"},
-                i({ class: `fab fa-2x fa-github` }),
+                i({ class: `fab fa-2x fa-github` }),"<br/>GitHub"
                 )
               ),
               div({class:"mx-auto"},
                 a({href:"https://www.npmjs.com/package/@saltcorn/cli"},
-                i({ class: `fab fa-2x fa-npm` }),
+                i({ class: `fab fa-2x fa-npm` }),"<br/>NPM"
                 )
               ),
               div({class:"mx-auto"},
               a({href:"https://www.youtube.com/channel/UCBOpAcH8ep7ESbuocxcq0KQ"},
-              i({ class: `fab fa-2x fa-youtube` }),
+              i({ class: `fab fa-2x fa-youtube` }),"<br/>YouTube"
               )
             ),
             div({class:"mx-auto"},
             a({href:"https://twitter.com/saltcorns"},
-            i({ class: `fab fa-2x fa-twitter` }),
+            i({ class: `fab fa-2x fa-twitter` }),"<br/>Twitter"
             ))
             ,
             div({class:"mx-auto"},
             a({href:"https://www.linkedin.com/in/nielsentom/"},
-            i({ class: `fab fa-2x fa-linkedin` }),
+            i({ class: `fab fa-2x fa-linkedin` }),"<br/>LinkedIn"
             )
           )
               ))
